@@ -554,3 +554,7 @@ jQuery(function ($) {
 
 
 });
+
+$(function() { 
+    $('.feature--our').matchHeight(); 
+});
