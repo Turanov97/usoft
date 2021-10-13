@@ -2208,7 +2208,7 @@ ul.social_icon li a:hover{
 ====================================== */
 
 .testimonial-bg{
-    background: url(../images/bg-img1.jpg) no-repeat;
+    background: url(../img/bg.jpg) no-repeat;
 }
 
 .testimonial-quote {
@@ -2612,7 +2612,7 @@ ul.social_icon li a:hover{
     -webkit-box-shadow: none;
     box-shadow: none;
     height: 44px;
-    color: #a5a5a5;
+    color: #000;
     font-size: 14px;
     position: relative;
     -webkit-transition: border .9s ease;
@@ -3683,6 +3683,7 @@ ul.social_icon li a:hover{
 
 @media screen and (max-width: 767px) {
 
+
     .mb-xs-5{
         margin-bottom: 3rem!important;
     }
@@ -3899,7 +3900,5 @@ ul.social_icon li a:hover{
         float: none;
         margin-top: .7rem;
     }
-
-}.footer__tel{
-    padding-left: 32px;
 }
+ 
