@@ -494,7 +494,15 @@ header.header-appear .top-center-logo a.logo{
     opacity: 0.9;
 }
 
+/* header__video */
 
+.video__size{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    opacity: .9;
+}
 
 /* logo top left navigation */
 
@@ -904,127 +912,89 @@ header .navbar-top-default.dark-navbar .header-social a{
 /* ===================================
    Features
 ====================================== */
-.card{
-    background-color: transparent;
-}
-.card__box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    background: #232427;
-  }
-  
-  .card__box .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 40px 0;
-  }
-  
-  .card__box .container .card {
-    position: relative;
-    min-width: 320px;
-    height: 440px;
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    margin: 30px;
-    transition: 0.5s;
-  }
-  
-  .card__box .container .card:nth-child(1) .box .content a {
-    background: #2196f3;
-  }
-  
-  .card__box .container .card:nth-child(2) .box .content a {
-    background: #e91e63;
-  }
-  
-  .card__box .container .card:nth-child(3) .box .content a {
-    background: #23c186;
-  }
-  
-  .card__box .container .card .box {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    background: #2a2b2f;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+ .border {
+    height: 379px;
+    width: 300px;
+    border-radius: 10px;
+    transition: background 0.8s;
     overflow: hidden;
-    transition: 0.5s;
-  }
-  
-  .card__box .container .card .box:hover {
-    transform: translateY(-50px);
-  }
-  
-  .card__box .container .card .box:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.03);
-  }
-  
-  .card__box .container .card .box .content {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .card__box .container .card .box .content h2 {
-    position: absolute;
-    top: -10px;
-    right: 30px;
-    font-size: 8rem;
-    color: rgba(255, 255, 255, 0.1);
-  }
-  
-  .card__box .container .card .box .content h3 {
-    font-size: 1.8rem;
-    color: #fff;
-    z-index: 1;
-    transition: 0.5s;
-    margin-bottom: 15px;
-  }
-  
-  .card__box .container .card .box .content p {
-    font-size: 1rem;
-    line-height: 1.2;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-    transition: 0.5s;
-  }
-  
-  .card__box .container .card .box .content a {
+    box-shadow: 0 70px 63px -60px rgb(0, 0, 0);
     position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    background: black;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    margin-top: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
-  }
-  .card__box .container .card .box .content a:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-    background: #fff;
-    color: #000;
-  }
+    background-color: #393a3d;
+    cursor: pointer;
+
+}
+
+.border__bg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/icon/4.svg) center no-repeat;
+    background-size: 200px;
+    transition:  .4s linear;
+    padding: 20px;
+}
+.border--bg2 {
+    background: url(../img/icon/5.png) center no-repeat;
+    background-size: 200px;
+}
+.border--bg3 {
+    background: url(../img/icon/6.png) center no-repeat;
+    background-size: 200px;
+}
+
+.border:hover .border__bg {
+    transform: scale(1.5);
+    filter: blur(6px);
+}
+
+.border:hover .border__text {
+    opacity: 1;
+}
+
+.border__text:hover .border__bg {
+    transform: scale(1.5);
+}
+
+.border__title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #c7c115;
+    margin: 20px;
+    opacity: 1;
+    transition: opacity 1s;
+    font-size: 20px;
+    text-align: end;
+    line-height: 1.5;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.border__text {
+    transition: opacity .3s linear;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-align: start;
+    display: flex;
+    margin: 20px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+
+.card__box{
+    background: #393a3d;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
   
 /* cards and */
 
@@ -1149,7 +1119,9 @@ header .navbar-top-default.dark-navbar .header-social a{
    Team
 ====================================== */
 
-
+.team__photo{
+    object-fit: cover;
+}
 .team-box input {
     position: absolute;
     display: none;
@@ -1170,6 +1142,7 @@ header .navbar-top-default.dark-navbar .header-social a{
     padding-left: 25px;
     font-size: 1.5rem;
     text-transform: uppercase;
+    color: #f7f24c !important;
 }
 
 .team-box label {
@@ -1178,7 +1151,7 @@ header .navbar-top-default.dark-navbar .header-social a{
     height:420px;
     width: 50px;
     z-index: 3;
-    background: #f7f24c;
+    background: #000;
     text-align: center;
     border-right: 1px solid #FFFFFF;
     border-left: 1px solid #FFFFFF;
@@ -1219,6 +1192,7 @@ header .navbar-top-default.dark-navbar .header-social a{
     width: 0px;
     background: #fff;
     opacity: 0;
+    font-family: 'Tenor Sans', sans-serif;
     overflow-x: hidden;
     float: left;
     border-top: 1px solid #efefef;
@@ -1455,7 +1429,7 @@ header .navbar-top-default.dark-navbar .header-social a{
 
 
 /* team three */
-
+ 
 .team-box-three,
 .team-box-three ul li {
     display: inline-block;
@@ -1900,7 +1874,9 @@ ul.social_icon li a:hover{
     margin-left: -1.5px;
 }
 
+
 .arrowhead {
+    display: none;
     width: 0;
     position: absolute;
     top: 0;
@@ -2666,7 +2642,7 @@ ul.social_icon li a:hover{
     display: inline-block;
     max-width: 190px;
     position: absolute;
-    bottom: 0px;
+    bottom: -2px;
     left: 50%;
     z-index: 1;
     transform: translateX(-50%);
@@ -3767,7 +3743,7 @@ ul.social_icon li a:hover{
     }
     .text-black{
         color: rgb(141, 141, 141);
-     
+    }
 
     .content-carousel .owl-carousel .owl-dots {
         position: relative;

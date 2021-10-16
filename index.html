@@ -26,7 +26,24 @@
     <!-- Revolution Style Sheets -->
     <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
     <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
-    <!-- Style Sheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Ephesis&family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Ephesis&family=Lobster&family=Rubik:wght@300;600&display=swap" rel="stylesheet">
+
+<!-- Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -49,8 +66,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="header-top-text text-center text-lg-left exo-font">6/1, Afrosiob street, Toshkent
-                        </div>
+                        <a class="header-top-text text-center text-lg-left exo-font nav__link scroll"
+                            href="#maps__location">6/1, Afrosiob street, Toshkent
+                        </a>
                     </div>
                     <div class="col-md-6">
                         <div class="header-top-text text-center text-lg-right exo-font">
@@ -73,7 +91,7 @@
                 <div class="collapse navbar-collapse" id="Herox">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link scroll active" href="#   ">Главная</a>
+                            <a class="nav-link scroll active" href="#home">Главная</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link scroll" href="#feature">Услуги</a>
@@ -125,28 +143,28 @@
                 <nav class="side-nav w-100">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#home">Home</a>
+                            <a class="nav-link scroll" href="#home">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#feature">Features</a>
+                            <a class="nav-link scroll" href="#feature">Услуги</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link scroll" href="#team">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#portfolio_top">Portfolio</a>
+                            <a class="nav-link scroll" href="#portfolio_top">Портфолио</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#price">Packages</a>
+                            <a class="nav-link scroll" href="#price">Достижения</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#client">Clients</a>
+                            <a class="nav-link scroll" href="#client">Клиенты</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#blog">Blog</a>
+                            <a class="nav-link scroll" href="#blog">Блог</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#contact">Contact</a>
+                            <a class="nav-link scroll" href="#contact">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -170,6 +188,12 @@
 
     <!--slider start-->
     <section id="home" class="p-0">
+        <!-- MAIN IMAGE -->
+        <video preload="none" class="video__size" src="img/bg-video.mp4" muted autoplay loop
+            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg"
+            data-no-retina> </video>
+        <!-- <video class="video__size" src="img/background.mp4" muted type="video/mp4" controls autoplay  loop alt="">
+        </video>  -->
         <h2 class="d-none" aria-hidden="true">hidden</h2>
         <div id="rev_slider_15_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="Herox-two"
             data-source="gallery" style="background:transparent;padding:0px;">
@@ -182,9 +206,7 @@
                         data-thumb="images/100x50_a43a8-Untitled-1.jpg" data-rotate="0" data-saveperformance="off"
                         data-title="Slide" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5=""
                         data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="images/slider-slide1.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
-                            data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 1 -->
@@ -240,8 +262,8 @@
                         data-title="Slide" data-param1="02" data-param2="" data-param3="" data-param4="" data-param5=""
                         data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="images/slider-slide2.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
-                            data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- <img src="images/slider-slide2.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                            data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina> -->
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 1 -->
@@ -264,7 +286,7 @@
                             data-textAlign="['left','left','center','center']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index: 6; white-space: nowrap; font-size: 15px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family: 'Exo', sans-serif">
-                            <p>мобильныe приложений</p>
+                            <p>мобильныe приложения</p>
                         </div>
 
                         <!-- LAYER NR. 3 -->
@@ -297,8 +319,8 @@
                         data-title="Slide" data-param1="03" data-param2="" data-param3="" data-param4="" data-param5=""
                         data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="images/slider-slide3.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
-                            data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- <img src="images/slider-slide3.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                            data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina> -->
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 1 -->
@@ -354,8 +376,8 @@
                         data-title="Slide" data-param1="04" data-param2="" data-param3="" data-param4="" data-param5=""
                         data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="images/slider-slide4.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
-                            data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- <img src="images/slider-slide4.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                            data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina> -->
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 1 -->
@@ -402,7 +424,7 @@
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index: 8; white-space: nowrap; font-size: 16px; line-height: 15px; font-weight: 500; color: #ffffff; letter-spacing: 0px;font-family:Exo;">
                             <a href="javascript:void(0)" class="slider-button">Learn More</a>
-                        </div>    
+                        </div>
                     </li>
                 </ul>
                 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
@@ -413,99 +435,74 @@
 
     <!--feature start-->
     <!-- <section id="feature" class="feature circle-top pb-0"> -->
-    <div  id="feature"  class="card__box">
-        <div class="container">
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <h2>01</h2>
-                        <h3>Минимальные сроки</h3>
-                        <p>
+        <div id="feature" class="card__box">
+            <div class="container">
+                <div class="row justify-content-between">
+    
+                    <div class="border">
+                        <div class="border__bg"></div>
+                        <h2 class="border__title">Минимальные <div>сроки</div>
+                        </h2>
+                        <p class="border__text">
                             Использование продвинутых методологий
                             и адаптивных решений существенно сокращает
                             время реализации проекта, при этом сохраняя
-                            индивидуальный подход .
+                            индивидуальный подход
                         </p>
-                        <!--   <a href="#">Read More</a> -->
+                        <!-- <div class="icons">
+                            <i class="fa fa-codepen" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div> -->
                     </div>
-                </div>
-            </div>
+    
+    
+                    <div class="border">
+                        <div class="border__bg border--bg2"></div>
 
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <h2>02</h2>
-                        <h3>управления сайтом</h3>
-                        <p>Упрощенная система управления сайтом для максимального
-                            удобства наших клиентов</p>
-                        <!--  <a href="#">Read More</a> -->
+                        <h2 class="border__title">Простота управления</h2>
+                        <div class="border__text ">
+                            Использование продвинутых методологий
+                            и адаптивных решений существенно сокращает
+                            время реализации проекта, при этом сохраняя
+                            индивидуальный подход
+                        </div>
+                        <div class="icons">
+                            <i class="fa fa-codepen" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
                     </div>
-                </div>
-            </div>
+    
+    
+                    <div class="border">
+                        <div class="border__bg border--bg3"></div>
 
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <h2>03</h2>
-                        <h3>Опыт</h3>
-                        <p>Usoft имеет 12 летний опыт в разработке веб-сайтов, приложений
-                            и систем автоматизации бизнеса</p>
-                        <!--   <a href="#">Read More</a> -->
+                        <h2 class="border__title">Опыт</h2>
+                        <div class="border__text">
+                            Usoft имеет 12 летний опыт в разработке веб-сайтов, приложений
+                            и систем автоматизации бизнеса
+                        </div>
+                        <div class="icons">
+                            <i class="fa fa-codepen" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
                     </div>
+    
                 </div>
             </div>
         </div>
-    </div>
-    <!--  <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-xs-5 ">
-                    <div class="col-11 feature--our">
-                        <div class="feature-box text-center">
-                            <img class="feature-icon" src="./img/icon/1.svg" alt="">
-                            <p class="mt-3 mb-3">Минимальные сроки</p>
-                            <div class="text-capitalize ">
-                                Использование продвинутых методологий
-                                и адаптивных решений существенно сокращает
-                                время реализации проекта, при этом сохраняя
-                                индивидуальный подход
-                            </div>
-                            <span class="hr-line mt-4 mb-4"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-xs-5 ">
-                    <div class="col-11 feature--our">
-                        <div class="feature-box text-center">
-                            <img class="feature-icon" src="./img/icon/2.svg" alt="">
-
-                            <p class="mt-3 mb-3">Простота управления сайтом</p>
-                            <div class="text-capitalize"> Упрощенная система управления сайтом для максимального
-                                удобства наших клиентов</div>
-                            <span class="hr-line mt-4 mb-4"></span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-4 ">
-                    <div class="col-11 feature--our">
-                        <div class="feature-box text-center">
-                            <img class="feature-icon" src="./img/icon/3.svg" alt="">
-
-                            <p class="mt-3 mb-3">Опыт</p>
-                            <div class="text-capitalize"> Usoft имеет 12 летний опыт в разработке веб-сайтов, приложений
-                                и систем автоматизации бизнеса</div>
-                            <span class="hr-line mt-4 mb-4"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-    <!--    </section> -->
     <!--feature end-->
 
     <!--team start-->
-    <section id="team" class="team circle-left">
+    <section id="team" class="team circle-left" data-aos="fade-left">
         <h2 class="d-none" aria-hidden="true">hidden</h2>
         <div class="container">
             <div class="row">
@@ -534,7 +531,8 @@
                                                 <a href="#.">Подробнее</a>
                                             </div>
                                             <div class="team-img">
-                                                <img src="images/1.jpg" alt="team-img">
+                                                <img class="team__photo" src="img/team 1.jpg" width="380" height="470"
+                                                    alt="team-img">
                                             </div>
                                         </div>
                                     </div>
@@ -560,7 +558,7 @@
                                                 <a href="#.">Подробнее</a>
                                             </div>
                                             <div class="team-img">
-                                                <img src="images/2.jpg" alt="team-img">
+                                                <img src="img/team 2.jpg" width="380" height="470" alt="team-img">
                                             </div>
                                         </div>
                                     </div>
@@ -569,8 +567,8 @@
                                 <li>
                                     <input id="rad3" type="radio" name="rad">
                                     <!--verticle text-->
-                                    <label for="rad3"><span class="team-name text-white"> мобильнe
-                                            приложение</span></label>
+                                    <label for="rad3"><span class="team-name text-white"> мобильныe
+                                            приложения</span></label>
                                     <div class="accslide">
                                         <div class="team-inner">
                                             <div class="team-about">
@@ -587,7 +585,7 @@
                                                 <a href="#.">Подробнее</a>
                                             </div>
                                             <div class="team-img">
-                                                <img src="images/3.jpg" alt="team-img">
+                                                <img src="img/team 3.jpg" width="380" height="470" alt="team-img">
                                             </div>
                                         </div>
                                     </div>
@@ -605,7 +603,7 @@
     <section id="portfolio_top" class="bg-light p-0">
         <div class="container">
             <div id="portfolio-measonry" class="cbp border-portfolio simple_overlay">
-                <div class="cbp-item itemshadow">
+                <div class="cbp-item itemshadow" data-aos="fade-down-right">
                     <img src="img/qanot_sharq.png" alt="">
                     <div class="overlay center-block text-white">
                         <a class="plus" data-fancybox="gallery" href="images/portfolio-1.jpg"></a>
@@ -613,7 +611,7 @@
                         <p>See Our Amazing Work</p>
                     </div>
                 </div>
-                <div class="cbp-item pt-5">
+                <div class="cbp-item pt-5" data-aos="fade-down-right">
                     <div class="text_wrap wow fadeIn" data-wow-delay="350ms">
                         <div class="heading-title text-center pt-5">
                             <h2 class="font-weight-600 m-0">Портфолио</h2>
@@ -625,7 +623,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cbp-item itemshadow">
+                <div class="cbp-item itemshadow" data-aos="fade-down-left">
                     <img src="img/24seven.png" alt="">
                     <div class="overlay center-block text-white">
                         <a class="plus" data-fancybox="gallery" href="images/portfolio-2.jpg"></a>
@@ -633,7 +631,7 @@
                         <p>See Our Amazing Work</p>
                     </div>
                 </div>
-                <div class="cbp-item itemshadow">
+                <div class="cbp-item itemshadow" data-aos="fade-down-right">
                     <img src="img/paeg.png" alt="">
                     <div class="overlay center-block text-white">
                         <a class="plus" data-fancybox="gallery" href="images/portfolio-3.jpg"></a>
@@ -641,7 +639,7 @@
                         <p>See Our Amazing Work</p>
                     </div>
                 </div>
-                <div class="cbp-item itemshadow">
+                <div class="cbp-item itemshadow" data-aos="fade-down-left">
                     <img src="img/Al-Chiroq.png" alt="">
                     <div class="overlay center-block text-white">
                         <a class="plus" data-fancybox="gallery" href="images/portfolio-4.jpg"></a>
@@ -735,7 +733,7 @@
                     <div class="title text-center pb-5">
                         <h2 class="font-weight-600 m-0">Достижения</h2>
                         <span class="hr-line mt-4 mb-4"></span>
-                   <!--      <p class="mb-4">Frameworks to provide a robust synopsis.</p> -->
+                        <!--      <p class="mb-4">Frameworks to provide a robust synopsis.</p> -->
                     </div>
                 </div>
             </div>
@@ -745,10 +743,11 @@
                 <div class="row">
                     <!-- NVE content div -->
 
-                    <ul id="timeline" class="timeline">
+                    <ul id="timeline" class="timeline" data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="700">
                         <div class="arrowhead"></div>
-                        <li class=" ">
-                            <div class="timeline-badge">2017</div>
+                        <li class=" " data-aos="fade-right" data-aos-duration="1200">
+                            <div class="timeline-badge">2017</div>  
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h3 class="timeline-title">1-место на конкурсе "Hackathon"</h3>
@@ -757,7 +756,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted ">
+                        <li class="timeline-inverted " data-aos="fade-left" >
                             <div class="timeline-badge">2018</div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -768,7 +767,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class=" ">
+                        <li class=" " data-aos="fade-right">
                             <div class="timeline-badge">2019</div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -779,7 +778,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted">
+                        <li class="timeline-inverted" data-aos="fade-left">
                             <div class="timeline-badge">2020</div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -789,7 +788,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="fot">
+                        <li class="fot" data-aos="fade-right">
                             <div class="timeline-badge">2021</div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -878,10 +877,10 @@
             </div>
         </div>
         </section> -->
-        <!-- our story end-->
+    <!-- our story end-->
 
-        <!-- our client -->
-      <!--   <section id="client" class="our-client">
+    <!-- our client -->
+    <!--   <section id="client" class="our-client">
             <h2 class="d-none" aria-hidden="true">hidden</h2>
             <div class="container">
                 <div class="row">
@@ -916,263 +915,271 @@
                 </div>
             </div>
         </section> -->
-        <!-- our client end -->
+    <!-- our client end -->
 
-        <!--blog-->
-        <section id="blog" class="blog-list bg-light text-center text-md-left">
-            <h2 class="d-none" aria-hidden="true">slider</h2>
-            <div class="container">
-                <div class="row">
-                    <!-- blog-item one -->
-                    <div class="col-lg-3 col-md-6 mb-3 mb-xs-5">
-                        <div class="image">
-                            <img alt="image" src="images/blog11.jpg">
-                        </div>
+    <!--blog-->
+    <section id="blog" class="blog-list bg-light text-center text-md-left">
+        <h2 class="d-none" aria-hidden="true">slider</h2>
+        <div class="container">
+            <div class="row">
+                <!-- blog-item one -->
+                <div class="col-lg-3 col-md-6 mb-3 mb-xs-5">
+                    <div class="image">
+                        <img alt="image" src="images/blog11.jpg">
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-xs-5">
-                        <div class="blog-box">
-                            <h4 class="text-capitalize mb-4">360° arial view</h4>
-                            <p class="mb-3 mb-xs-4">Leverage agile frameworks to provide a robust synopsis for high
-                                level overviews.</p>
-                            <a class="btn btn-large btn-pink mb-xs-4" href="blog-left.html"> Read More</a>
-                        </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-xs-5">
+                    <div class="blog-box">
+                        <h4 class="text-capitalize mb-4">360° arial view</h4>
+                        <p class="mb-3 mb-xs-4">Leverage agile frameworks to provide a robust synopsis for high
+                            level overviews.</p>
+                        <a class="btn btn-large btn-pink mb-xs-4" href="blog-left.html"> Read More</a>
                     </div>
-                    <!-- blog-item two -->
-                    <div class="col-lg-3 col-md-6 mb-xs-5">
-                        <div class="image">
-                            <img alt="image" src="images/blog22.jpg">
-                        </div>
+                </div>
+                <!-- blog-item two -->
+                <div class="col-lg-3 col-md-6 mb-xs-5">
+                    <div class="image">
+                        <img alt="image" src="images/blog22.jpg">
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="blog-box">
-                            <h4 class="text-capitalize mb-4">360° arial view</h4>
-                            <p class="mb-3 mb-xs-4">Leverage agile frameworks to provide a robust synopsis for high
-                                level overviews.</p>
-                            <a class="btn btn-large btn-pink" href="blog-left.html"> Read More</a>
-                        </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="blog-box">
+                        <h4 class="text-capitalize mb-4">360° arial view</h4>
+                        <p class="mb-3 mb-xs-4">Leverage agile frameworks to provide a robust synopsis for high
+                            level overviews.</p>
+                        <a class="btn btn-large btn-pink" href="blog-left.html"> Read More</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--blog end-->
+        </div>
+    </section>
+    <!--blog end-->
 
-        <!-- Contact US -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="title text-center pb-5">
-                            <h2 class="font-weight-600 m-0">Наши Контакты</h2>
-                            <span class="hr-line mt-4 mb-4"></span>
-                            <!--   <p class="mb-4">Frameworks to provide a robust synopsis.</p> -->
-                        </div>
+    <!-- Contact US -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title text-center pb-5">
+                        <h2 class="font-weight-600 m-0">Наши Контакты</h2>
+                        <span class="hr-line mt-4 mb-4"></span>
+                        <!--   <p class="mb-4">Frameworks to provide a robust synopsis.</p> -->
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 mb-xs-5">
-                        <form class="getin_form" onsubmit="return false;">
-                            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mb-xs-5">
+                    <form class="getin_form" onsubmit="return false;">
+                        <div class="row">
 
-                                <div class="col-sm-12" id="result"></div>
+                            <div class="col-sm-12" id="result"></div>
 
-                                <div class="col-md-12 col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="Имя : " required
-                                            id="first_name" name="first_name">
-                                    </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Имя : " required
+                                        id="first_name" name="first_name">
                                 </div>
-                                <!--  <div class="col-md-6 col-sm-6">
+                            </div>
+                            <!--  <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <input class="form-control" type="text" placeholder="Фамилия : " required
                                             id="last_name" name="last_name">
                                     </div>
                                 </div> -->
 
-                                <div class="col-md-12 col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control" type="tel" placeholder="Телефон : " id="phone"
-                                            name="phone">
-                                    </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" type="tel" placeholder="Телефон : " id="phone"
+                                        name="phone">
                                 </div>
-                                <!--  <div class="col-md-6 col-sm-6">
+                            </div>
+                            <!--  <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <input class="form-control" type="email" placeholder="Эл.адрес : " required
                                             id="email" name="email">
                                     </div>
                                 </div> -->
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="form-group mb-4">
-                                        <textarea class="form-control" placeholder="Сообщение" id="message"
-                                            name="message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <button type="submit" class="btn btn-large btn-pink w-100" id="submit_btn">Отправить
-                                        Запрос</button>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group mb-4">
+                                    <textarea class="form-control" placeholder="Сообщение" id="message"
+                                        name="message"></textarea>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="col-md-6 col-sm-12 pl-4">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-large btn-pink w-100" id="submit_btn">Отправить
+                                    Запрос</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-sm-12 pl-4">
 
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 our-address mb-4">
-                                <h6 class="mb-3 font-weight-600">наш адрес</h6>
-                                <p class="mb-2">Улица Афросиоб 6/1, Ташкент</p>
-                               <!--  <a class="pickus" href="#." data-text="Получить направления">Получить направления</a> -->
-                            </div>
-                            <div class="col-md-6 col-sm-6 our-address mb-4">
-                                <h6 class="mb-3 font-weight-600">Наш телефон</h6>
-                                <p class="mb-2" > +998 71 200 12 00 <br> +998 90 965 76 34</p>
-                               <!--  <a class="pickus" href="#." data-text="Позвоните нам">Позвоните нам</a> -->
-                            </div>
-                            <div class="col-md-6 col-sm-6 our-address mb-4">
-                                <h6 class="mb-3 font-weight-600">наша электронная почта</h6>
-                                <p class="mb-2"> info@usoft.uz
-                                    <!-- <span class="block">Inquiries : email@website.com</span>  -->
-                                </p>
-                               <!--  <a class="pickus" href="#." data-text="Отправить Сообщение">Отправить Сообщение</a> -->
-                            </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 our-address mb-4">
+                            <h6 class="mb-3 font-weight-600">наш адрес</h6>
+                            <p class="mb-2">Улица Афросиоб 6/1, Ташкент</p>
+                            <!--  <a class="pickus" href="#." data-text="Получить направления">Получить направления</a> -->
+                        </div>
+                        <div class="col-md-6 col-sm-6 our-address mb-4">
+                            <h6 class="mb-3 font-weight-600">Наш телефон</h6>
+                            <p class="mb-2"> +998 71 200 12 00 <br> +998 90 965 76 34</p>
+                            <!--  <a class="pickus" href="#." data-text="Позвоните нам">Позвоните нам</a> -->
+                        </div>
+                        <div class="col-md-6 col-sm-6 our-address mb-4">
+                            <h6 class="mb-3 font-weight-600">наша электронная почта</h6>
+                            <p class="mb-2"> info@usoft.uz
+                                <!-- <span class="block">Inquiries : email@website.com</span>  -->
+                            </p>
+                            <!--  <a class="pickus" href="#." data-text="Отправить Сообщение">Отправить Сообщение</a> -->
+                        </div>
 
-                            <!-- <div class="col-md-6 col-sm-6 our-address">
+                        <!-- <div class="col-md-6 col-sm-6 our-address">
                         <h6 class="mb-3 font-weight-600">Our Support</h6>
                         <p class="mb-2">Main Support : info@website.com <span>Sales : support@website</span> </p>
                         <a class="pickus" href="#." data-text="Open a Ticket">Open a Ticket</a>
                     </div> -->
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Contact US Ends-->
+        </div>
+    </section>
+    <!--Contact US Ends-->
 
-        <!-- Map -->
-        <section class="p-0   text-center">
-            <!--Location Map here-->
+    <!-- Map -->
+    <section class="p-0   text-center">
+        <!--Location Map here-->
 
-            <iframe class="map__location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d749.3442100108285!2d69.26926082921004!3d41.30066499870451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE4JzAyLjQiTiA2OcKwMTYnMTEuMyJF!5e0!3m2!1sru!2s!4v1634016552497!5m2!1sru!2s"
-                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <!--Bottom Logo-->
-            <div class="logo-icon" style="height: 70px;">
-                <img src="images/logo-black.svg" alt="image" class="logo-light">
-            </div>
-        </section>
-        <!-- Map End -->
+        <iframe id="maps__location" class="map__location "
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d749.3442100108285!2d69.26926082921004!3d41.30066499870451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE4JzAyLjQiTiA2OcKwMTYnMTEuMyJF!5e0!3m2!1sru!2s!4v1634016552497!5m2!1sru!2s"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <!--Bottom Logo-->
+        <div class="logo-icon" style="height: 70px;">
+            <img src="images/logo-black.svg" alt="image" class="logo-light">
+        </div>
+    </section>
+    <!-- Map End -->
 
-        <!-- Footer -->
-        <footer class="footer-padding bg-dark font-weight-600">
-            <div class="container">
-                <div class="row text-center text-md-left">
-                    <div class="col-md-3 mb-xs-4">
-                        <h4 class="text-white font-weight-500">Наш Адрес</h4>
-                        <span class="hr-line mt-4 mb-4 ml-md-0"></span>
-                        <p class="mb-4">Улица Афросиоб 6/1, <br> Ташкент
-                            </p>
-                        <p class="mb-4">TEL: <a href="javascript:void(0)">+998 71 200 12 00</a><br>
-                             <a class="ml-1 pl-4 " href="javascript:void(0)">+998 90 965 76 34</a></p>
-                        <p>EMAIL:<a href="javascript:void(0)"> info@usoft.uz</a></p>
-                    </div>
-
-                    <div class="col-md-3 mb-xs-4">
-                        <h4 class="text-white font-weight-500">Компания</h4>
-                        <span class="hr-line mt-4 mb-4 ml-md-0"></span>
-                        <ul class="list-unstyled">
-                            <li><a href="javascript:void(0)">About</a></li>
-                            <li><a href="javascript:void(0)">Leadership</a></li>
-                            <li><a href="javascript:void(0)">Blog</a></li>
-                            <li><a href="javascript:void(0)">Careers</a></li>
-                            <li><a href="javascript:void(0)">Partner Network</a></li>
-                            <li><a href="javascript:void(0)">Referral Program</a></li>
-                            <li><a href="javascript:void(0)">Events</a></li>
-                            <li><a href="javascript:void(0)">Legal Security</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-3 mb-xs-4">
-                        <h4 class="text-white font-weight-500">Продукт</h4>
-                        <span class="hr-line mt-4 mb-4 ml-md-0"></span>
-                        <ul class="list-unstyled">
-                            <li><a href="javascript:void(0)">Download</a></li>
-                            <li><a href="javascript:void(0)">Windows</a></li>
-                            <li><a href="javascript:void(0)">Mac</a></li>
-                            <li><a href="javascript:void(0)">Linux</a></li>
-                            <li><a href="javascript:void(0)">iPhone</a></li>
-                            <li><a href="javascript:void(0)">Android</a></li>
-                            <li><a href="javascript:void(0)">Chrome</a></li>
-                            <li><a href="javascript:void(0)">GPS & Location</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-3">
-                        <h4 class="text-white font-weight-500">Поддержка</h4>
-                        <span class="hr-line mt-4 mb-4 ml-md-0"></span>
-                        <ul class="list-unstyled">
-                            <li><a href="javascript:void(0)">Affiliates</a></li>
-                            <li><a href="javascript:void(0)">Demo</a></li>
-                            <li><a href="javascript:void(0)">Help Center</a></li>
-                            <li><a href="javascript:void(0)">FAQ</a></li>
-                            <li><a href="javascript:void(0)">Testimonials</a></li>
-                            <li><a href="javascript:void(0)">Blog</a></li>
-                            <li><a href="javascript:void(0)">Press</a></li>
-                            <li><a href="javascript:void(0)">Email Us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-12 mt-lg-5 mt-2 text-center">
-                        <p class="mb-4 mt-3">© 2021 USOFT LLC. All rights reserved.  </p>
-                        <div class="footer-social">
-                            <a href="https://www.linkedin.com/company/usoft-round-umbrella-llc" target="blank"><i
-                                    class="ti-linkedin" aria-hidden="true"></i></a>
-                            <a href="https://www.facebook.com/umbrellasoftuz" target="blank"><i class="ti ti-facebook"
-                                    aria-hidden="true"></i></a>
-                            <a href="https://instagram.com/usoft.uz?utm_medium=copy_link" target="blank"><i
-                                    class="ti ti-instagram" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-
+    <!-- Footer -->
+    <footer class="footer-padding bg-dark font-weight-600">
+        <div class="container">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 mb-xs-4">
+                    <h4 class="text-white font-weight-500">Наш Адрес</h4>
+                    <span class="hr-line mt-4 mb-4 ml-md-0"></span>
+                    <p class="mb-4">Улица Афросиоб 6/1, <br> Ташкент
+                    </p>
+                    <p class="mb-4">TEL: <a href="javascript:void(0)">+998 71 200 12 00</a><br>
+                        <a class="ml-1 pl-4 " href="javascript:void(0)">+998 90 965 76 34</a>
+                    </p>
+                    <p>EMAIL:<a href="javascript:void(0)"> info@usoft.uz</a></p>
                 </div>
+
+                <div class="col-md-3 mb-xs-4">
+                    <h4 class="text-white font-weight-500">Компания</h4>
+                    <span class="hr-line mt-4 mb-4 ml-md-0"></span>
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:void(0)">About</a></li>
+                        <li><a href="javascript:void(0)">Leadership</a></li>
+                        <li><a href="javascript:void(0)">Blog</a></li>
+                        <li><a href="javascript:void(0)">Careers</a></li>
+                        <li><a href="javascript:void(0)">Partner Network</a></li>
+                        <li><a href="javascript:void(0)">Referral Program</a></li>
+                        <li><a href="javascript:void(0)">Events</a></li>
+                        <li><a href="javascript:void(0)">Legal Security</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-xs-4">
+                    <h4 class="text-white font-weight-500">Продукт</h4>
+                    <span class="hr-line mt-4 mb-4 ml-md-0"></span>
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:void(0)">Download</a></li>
+                        <li><a href="javascript:void(0)">Windows</a></li>
+                        <li><a href="javascript:void(0)">Mac</a></li>
+                        <li><a href="javascript:void(0)">Linux</a></li>
+                        <li><a href="javascript:void(0)">iPhone</a></li>
+                        <li><a href="javascript:void(0)">Android</a></li>
+                        <li><a href="javascript:void(0)">Chrome</a></li>
+                        <li><a href="javascript:void(0)">GPS & Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h4 class="text-white font-weight-500">Поддержка</h4>
+                    <span class="hr-line mt-4 mb-4 ml-md-0"></span>
+                    <ul class="list-unstyled">
+                        <li><a href="javascript:void(0)">Affiliates</a></li>
+                        <li><a href="javascript:void(0)">Demo</a></li>
+                        <li><a href="javascript:void(0)">Help Center</a></li>
+                        <li><a href="javascript:void(0)">FAQ</a></li>
+                        <li><a href="javascript:void(0)">Testimonials</a></li>
+                        <li><a href="javascript:void(0)">Blog</a></li>
+                        <li><a href="javascript:void(0)">Press</a></li>
+                        <li><a href="javascript:void(0)">Email Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 mt-lg-5 mt-2 text-center">
+                    <p class="mb-4 mt-3">© 2021 USOFT LLC. All rights reserved. </p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/company/usoft-round-umbrella-llc" target="blank"><i
+                                class="ti-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/umbrellasoftuz" target="blank"><i class="ti ti-facebook"
+                                aria-hidden="true"></i></a>
+                        <a href="https://instagram.com/usoft.uz?utm_medium=copy_link" target="blank"><i
+                                class="ti ti-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
             </div>
-        </footer>
-        <!-- Footer End -->
+        </div>
+    </footer>
+    <!-- Footer End -->
 
-        <!-- start scroll to top -->
-        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti ti-angle-up"></i></a>
-        <!-- end scroll to top  -->
+    <!-- start scroll to top -->
+    <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti ti-angle-up"></i></a>
+    <!-- end scroll to top  -->
 
-        <!-- Optional JavaScript -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.appear.js"></script>
-        <!-- isotop gallery -->
-        <script src="js/isotope.pkgd.min.js"></script>
-        <!-- cube portfolio gallery -->
-        <script src="js/jquery.cubeportfolio.min.js"></script>
-        <!-- owl carousel slider -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- parallax Background -->
-        <script src="js/parallaxie.min.js"></script>
-        <!-- fancybox popup -->
-        <script src="js/jquery.fancybox.min.js"></script>
-        <!-- REVOLUTION JS FILES -->
-        <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <!-- SLIDER REVOLUTION EXTENSIONS -->
-        <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-        <!-- map -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBceNl50o3BU6LrsIGJxSL9tKKvqBKIeVs,"></script>
-        <script src="js/map.js"></script>
-        <!-- custom script -->
-        <script src="js/script.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <!-- isotop gallery -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- cube portfolio gallery -->
+    <script src="js/jquery.cubeportfolio.min.js"></script>
+    <!-- owl carousel slider -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- parallax Background -->
+    <script src="js/parallaxie.min.js"></script>
+    <!-- fancybox popup -->
+    <script src="js/jquery.fancybox.min.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION EXTENSIONS -->
+    <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <!-- map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBceNl50o3BU6LrsIGJxSL9tKKvqBKIeVs,"></script>
+    <script src="js/map.js"></script>
+    <!-- custom script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
+    <script src="js/script.js"></script>
 
 </body>
 
