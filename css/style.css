@@ -502,6 +502,7 @@ header.header-appear .top-center-logo a.logo{
     object-fit: cover;
     position: absolute;
     opacity: .9;
+    filter: blur(3px);
 }
 
 /* logo top left navigation */
@@ -1230,6 +1231,7 @@ header .navbar-top-default.dark-navbar .header-social a{
     width: 960px;
     opacity: 1;
 }
+ 
 
 
 /* team two */
@@ -2128,7 +2130,7 @@ ul.social_icon li a:hover{
 .video-parallax h2{
     font-size: 2.8rem;
 }
-
+ 
 /* Backhround Images */
 
 .bg-1{ background: url(../images/bg-img1.jpg) no-repeat;}
