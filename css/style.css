@@ -502,7 +502,7 @@ header.header-appear .top-center-logo a.logo{
     object-fit: cover;
     position: absolute;
     opacity: .9;
-    filter: blur(3px);
+    filter: blur(1.5px);
 }
 
 /* logo top left navigation */
@@ -992,9 +992,10 @@ header .navbar-top-default.dark-navbar .header-social a{
 
 .card__box{
     background: #393a3d;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
+    padding: 50px 0;
 }
   
 /* cards and */
@@ -1227,6 +1228,7 @@ header .navbar-top-default.dark-navbar .header-social a{
     width: 960px;
     background: #FFFFFF;
 }
+
 .team-box input[type="radio"]:checked+label ~ .accslide {
     width: 960px;
     opacity: 1;

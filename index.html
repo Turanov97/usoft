@@ -37,13 +37,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Ephesis&family=Lobster&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Ephesis&family=Lobster&family=Rubik:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Ephesis&family=Lobster&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Ephesis&family=Lobster&family=Rubik:wght@300;600&display=swap"
+        rel="stylesheet">
 
-<!-- Style Sheet -->
+    <!-- Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -189,7 +193,7 @@
     <!--slider start-->
     <section id="home" class="p-0">
         <!-- MAIN IMAGE -->
-        <video   preload="none" class="video__size" src="img/bg-video.mp4" muted autoplay loop
+        <video preload="none" class="video__size" src="img/bg-video.mp4" muted autoplay loop
             data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg"
             data-no-retina> </video>
         <!-- <video class="video__size" src="img/background.mp4" muted type="video/mp4" controls autoplay  loop alt="">
@@ -435,10 +439,10 @@
 
     <!--feature start-->
     <!-- <section id="feature" class="feature circle-top pb-0"> -->
-        <div id="feature" class="card__box">
-            <div class="container">
-                <div class="row justify-content-between">
-    
+    <div id="feature" class="card__box">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12 p-4 d-flex justify-content-center ">
                     <div class="border">
                         <div class="border__bg"></div>
                         <h2 class="border__title">Минимальные <div>сроки</div>
@@ -457,17 +461,16 @@
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                         </div> -->
                     </div>
-    
-    
-                    <div class="border">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 p-4  d-flex justify-content-center">
+                    <div class="border ">
                         <div class="border__bg border--bg2"></div>
 
                         <h2 class="border__title">Простота управления</h2>
                         <div class="border__text ">
-                            Использование продвинутых методологий
-                            и адаптивных решений существенно сокращает
-                            время реализации проекта, при этом сохраняя
-                            индивидуальный подход
+                            Упрощенная система управления сайтом
+                            для максимального удобства наших клиентов
                         </div>
                         <div class="icons">
                             <i class="fa fa-codepen" aria-hidden="true"></i>
@@ -477,28 +480,30 @@
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                         </div>
                     </div>
-    
-    
-                    <div class="border">
-                        <div class="border__bg border--bg3"></div>
+                </div>
 
-                        <h2 class="border__title">Опыт</h2>
-                        <div class="border__text">
-                            Usoft имеет 12 летний опыт в разработке веб-сайтов, приложений
-                            и систем автоматизации бизнеса
-                        </div>
-                        <div class="icons">
-                            <i class="fa fa-codepen" aria-hidden="true"></i>
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <i class="fa fa-dribbble" aria-hidden="true"></i>
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </div>
+                <div class="col-lg-4 col-md-6 col-12 p-4  d-flex justify-content-center">
+                <div class="border">
+                    <div class="border__bg border--bg3"></div>
+
+                    <h2 class="border__title">Опыт</h2>
+                    <div class="border__text">
+                        Usoft имеет 5 летний опыт в разработке веб-сайтов, приложений
+                        и систем автоматизации бизнеса
                     </div>
-    
+                    <div class="icons">
+                        <i class="fa fa-codepen" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+
+            </div>
         </div>
+    </div>
     <!--feature end-->
 
     <!--team start-->
@@ -509,7 +514,7 @@
                 <div class="col-sm-12">
                     <div class="team-box">
                         <form>
-                            <ul>
+                            <ul id="usoft_accordion">
                                 <!--accordian first slide-->
                                 <li>
                                     <input id="rad1" type="radio" checked name="rad">
@@ -747,7 +752,7 @@
                         data-aos-duration="700">
                         <div class="arrowhead"></div>
                         <li class=" " data-aos="fade-right" data-aos-duration="1200">
-                            <div class="timeline-badge">2017</div>  
+                            <div class="timeline-badge">2017</div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h3 class="timeline-title">1-место на конкурсе "Hackathon"</h3>
@@ -756,7 +761,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted " data-aos="fade-left" >
+                        <li class="timeline-inverted " data-aos="fade-left">
                             <div class="timeline-badge">2018</div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">

@@ -560,3 +560,11 @@ $(function() {
 });
 
 AOS.init();
+
+
+/**
+ * Usoft accordion
+ */
+const $labels = document.querySelectorAll('#usoft_accordion label'); // all labels in accordion
+const $radios = document.querySelectorAll('#usoft_accordion input'); // all radios in accordion
+$labels.forEach(($label, index) => $label.addEventListener('mouseover', () => $radios[index].checked = true)); // add listener for current label
